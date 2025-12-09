@@ -1,5 +1,8 @@
 {
   "is-main": true,
+  "supported-targets": [
+    "js"
+  ],
   "import": [
     "bikallem/rsignal",
     "bikallem/rsignal/rweb",

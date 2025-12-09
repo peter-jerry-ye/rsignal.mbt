@@ -3,7 +3,7 @@
 type Window
 
 ///|
-extern "js" fn window_ffi() -> Window = "() => window"
+extern "js" fn window_ffi() -> Window = "() => { try { return window } catch(e) { return null } }"
 
 ///|
 pub let window : Window = window_ffi()

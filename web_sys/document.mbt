@@ -13,7 +13,7 @@ pub impl TJsValue for Document with to_jv(self : Document) -> JsValue = "%identi
 pub impl TEventTarget for Document
 
 ///|
-extern "js" fn document_ffi() -> Document = "() => document"
+extern "js" fn document_ffi() -> Document = "() => { try { return document } catch(e) { return null } }"
 
 ///|
 /// Global document instance

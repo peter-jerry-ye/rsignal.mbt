@@ -1,4 +1,7 @@
 {
+    "supported-targets": [
+        "js"
+    ],
     "import": [
         "bikallem/rsignal",
         "bikallem/rsignal/js_sys",
