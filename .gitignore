@@ -22,3 +22,7 @@ dist
 .vscode/*
 !.vscode/extensions.json
 .moonagent
+_build
+
+_build/
+target
